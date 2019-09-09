@@ -65,7 +65,7 @@ const HooksContainer1 = () => {
         : <p> stateprop1 is false </p>
       }
       <br />
-      {context.userReducer1State
+      {context.stateProp2
         ? <p> stateprop2 is true </p>
         : <p> stateprop2 is false </p>
       }
