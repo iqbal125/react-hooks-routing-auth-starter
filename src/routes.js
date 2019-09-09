@@ -27,17 +27,6 @@ const PrivateRoute = ({component: Component, auth }) => (
 const Routes = () => {
     const context = useContext(Context)
 
-    useEffect(() => {
-      if(context.authObj.isAuthenticated()) {
-        context.handleUserLogin()
-        context.authObj.getProfile()
-        setTimeout(() => context.handleUserAddProfile(context.authObj.userProfile), 400)
-      }
-      else {
-        context.handleUserLogout()
-        context.handleUserRemoveProfile()
-      }
-    }, [])
 
       return(
         <div>
