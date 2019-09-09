@@ -58,7 +58,7 @@ const HooksForm1 = () => {
         <p>Change: {valueChange}</p>
         <p>Submit: {valueSubmit}</p>
         <br />
-        {context.prop4}
+
         <h3>React useReducer:</h3>
         <p>Change: {state.user_textChange}</p>
         <p>Submit: {state.user_textSubmit}</p>
